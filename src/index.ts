@@ -22,7 +22,7 @@ const EnableStaging: Plugin = {
       // thanks Dziurwa <3  
       const CurrentUserStore = getByProps("getCurrentUser");
       const SerialState = getByProps("getSerializedState");
-      CurrentUserStore.getCurrentUser().flags |= 1;
+      CurrentUserStore.getCurrentUser().flags |= 18;
       CurrentUserStore._dispatcher._actionHandlers
         ._computeOrderedActionHandlers("OVERLAY_INITIALIZE")
         .forEach(function (e) {
