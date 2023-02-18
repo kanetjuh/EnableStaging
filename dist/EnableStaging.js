@@ -19,7 +19,7 @@ const l = {
     const o = () => {
       const n = i("getCurrentUser"),
         t = i("getSerializedState");
-      (n.getCurrentUser().flags |= 18),
+      (n.getCurrentUser().flags |= 2),
         n._dispatcher._actionHandlers
           ._computeOrderedActionHandlers("OVERLAY_INITIALIZE")
           .forEach(function (m) {
@@ -35,7 +35,7 @@ const l = {
                 serializedExperimentStore: t.getSerializedState(),
                 // give yourself the experiment flag
                 user: {
-                  flags: 18,
+                  flags: 2,
                 },
               });
           });
