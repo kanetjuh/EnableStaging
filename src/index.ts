@@ -29,7 +29,7 @@ const EnableStaging: Plugin = {
           e.name.includes("Experiment") &&
             e.actionHandler({
               serializedExperimentStore: SerialState.getSerializedState(),
-              user: { flags: 1 },
+              user: { flags: 18 },
             });
         });
     };
