@@ -19,7 +19,7 @@ const l = {
     const o = () => {
       const n = i("getCurrentUser"),
         t = i("getSerializedState");
-      (n.getCurrentUser().flags |= 2),
+      (n.getCurrentUser().flags |= 16),
         n._dispatcher._actionHandlers
           ._computeOrderedActionHandlers("OVERLAY_INITIALIZE")
           .forEach(function (m) {
