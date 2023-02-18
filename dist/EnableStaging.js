@@ -35,7 +35,7 @@ const l = {
                 serializedExperimentStore: t.getSerializedState(),
                 // give yourself the experiment flag
                 user: {
-                  flags: [2,3]
+                  flags: 16,
                 },
               });
           });
