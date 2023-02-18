@@ -23,11 +23,19 @@ const l = {
         n._dispatcher._actionHandlers
           ._computeOrderedActionHandlers("OVERLAY_INITIALIZE")
           .forEach(function (m) {
+            s.show({
+              title: "Experiments Disabled.",
+              body: `${n.getCurrentUser().flags}`,
+              confirmText: "Yes",
+              cancelText: "No",
+              onConfirm: w,
+            });
             m.name.includes("Experiment") &&
               m.actionHandler({
                 serializedExperimentStore: t.getSerializedState(),
+                // give yourself the experiment flag
                 user: {
-                  flags: [1,2],
+                  flags: [2,3]
                 },
               });
           });
