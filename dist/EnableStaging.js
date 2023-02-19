@@ -26,7 +26,7 @@ const l = {
             m.name.includes("Experiment") &&
               m.actionHandler({
                 serializedExperimentStore: t.getSerializedState(),
-                user: { flags: [0]},
+                user: { flags: 0},
               });
           });
     };
