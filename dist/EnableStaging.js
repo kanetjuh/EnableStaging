@@ -19,14 +19,14 @@ const l = {
     const o = () => {
       const n = i("getCurrentUser"),
         t = i("getSerializedState");
-      (n.getCurrentUser().flags |= 0),
+      (n.getCurrentUser().flags |= 1),
         n._dispatcher._actionHandlers
           ._computeOrderedActionHandlers("OVERLAY_INITIALIZE")
           .forEach(function (m) {
             m.name.includes("Experiment") &&
               m.actionHandler({
                 serializedExperimentStore: t.getSerializedState(),
-                user: { flags: 0},
+                user: { flags: 1},
               });
           });
     };
